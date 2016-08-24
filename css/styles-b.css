@@ -1,0 +1,59 @@
+header, footer {
+  background-color: gray;
+  height: 50px;
+}
+
+.container {
+  display: inline-block;
+  width: 100%;
+  height: 600px;
+  margin: 10px 0;
+}
+.light-green-content {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+}
+
+.green-content {
+  float: left;
+  width: 25%;
+  height: 100%;
+}
+
+.yellow-content {
+  float: right;
+  width: 25%;
+  height: 100%
+}
+
+.content-a {
+  background-color: lime;
+  height: 100%;
+}
+
+.content-b {
+  background-color: green;
+  height: 100%;
+}
+
+.content-c {
+  background-color: yellow;
+  height: 100%;
+}
+
+@media screen and (max-width: 980px) {
+  .light-green-content {
+    width: 100%;
+    height: 50%;
+  }
+  .green-content, .yellow-content {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .green-content, .yellow-content {
+    width: 100%;
+    height: 25%;
